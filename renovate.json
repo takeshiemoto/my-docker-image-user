@@ -1,12 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:base"
   ],
   "packageRules": [
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["takeshiemoto/my-docker-image"],
+      "matchPackagePatterns": ["^ghcr.io/takeshiemoto/my-docker-image"],
       "pinDigests": true
     }
   ]
