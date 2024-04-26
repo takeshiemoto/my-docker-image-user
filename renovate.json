@@ -5,9 +5,8 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": [
-        "docker"
-      ],
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["takeshiemoto/my-docker-image"],
       "pinDigests": true
     }
   ]
