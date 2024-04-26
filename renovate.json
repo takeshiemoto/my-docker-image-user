@@ -3,13 +3,11 @@
   "extends": [
     "config:base"
   ],
-  "regexManagers": [
+  "packageRules": [
     {
-      "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
-      "matchStrings": [
-        "image: (?<depName>ghcr\\.io\\/takeshiemoto\\/my-docker-image)@sha256:(?<currentValue>[a-f0-9]+)"
-      ],
-      "datasourceTemplate": "docker"
+      "matchDatasources": ["docker"],
+      "matchPackagePatterns": ["ghcr.io/takeshiemoto/my-docker-image"],
+      "pinDigests": true
     }
   ]
 }
