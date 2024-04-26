@@ -1,0 +1,18 @@
+name: Run Container
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-container:
+    runs-on: ubuntu-latest
+
+    container:
+      image: ghcr.io/takeshiemoto/my-docker-image:main
+
+    steps:
+      - name: Run a script inside the container
+        run: |
+          echo "Hello, World!"
