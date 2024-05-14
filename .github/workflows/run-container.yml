@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: ghcr.io/takeshiemoto/my-docker-image:main@sha256:0b27079378f8bb32058320098c68772bbf54f744f1bcfdbdb23e2665c5bdc239
+      image: ghcr.io/takeshiemoto/my-docker-image:main@sha256:31dddebe7147071e35eb66fa3bf8925b262e83d3fa6537663e0853ec0b79c308
 
     steps:
       - name: Run a script inside the container
